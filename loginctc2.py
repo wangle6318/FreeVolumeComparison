@@ -9,8 +9,8 @@ import json
 from getSerInfo import getJFQTinfo
 from universal import UniversalModel
 
-CTC_URL = 'https://www.sh.ctc.com/'
-JFQT_URL = 'http://www.sh.ctc.com/maint/maintenance/crmLoginCmd.go'
+CTC_URL = 'https://www.xx.xxx.com/'
+JFQT_URL = 'http://www.xx.xxx.com/xxxx/xxxxxxxxxxx/xxLoginCmd.go'
 
 
 class LoginCtc(object):
@@ -203,12 +203,12 @@ if __name__ == '__main__':
     driver = webdriver.Ie()
     LoginCtc(driver)
     search = QueryJFQT(driver)
-    a, b = search.queryValue('17721099892')
+    a, b = search.queryValue('')
     print(getJFQTinfo(a).getBundleinfo())
     print(getJFQTinfo(b).getUseInfoCqd())
     # search.queryValue('15300510610')
 
-    # ser_list = ['15300510610', '17721099892', '13301717179', '13301933150', '13311802892']
+    # ser_list = ['', '', '', '', '']
     # for ser in ser_list:
     #     a, b = search.queryValue(ser)
     #     print(getJFQTinfo(a).getBundleinfo())
